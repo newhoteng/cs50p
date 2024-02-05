@@ -10,4 +10,5 @@ Just see
 
 # Say hello to user
 # print("hello, " + name)
-print("hello,", name)
+# print("hello,", name)
+print(f"hello, {name}")
