@@ -14,7 +14,7 @@
 #   # i = i + 1
 #   i += 1
 
-# for (1 = 0, i < som.length, i++)
+# for (let i = 0, i < som.length, i++)
 # FOR
 # for i in [0, 1, 2]:
 #   print("meow")
