@@ -2,7 +2,11 @@
 # x = int(input("What's x? "))
 # print(f"x is {x}")
 
-"""To take car of a user typing a string for example"""
+"""
+To take car of a user typing a string for example
+Use try except to handle runtime errors
+SyntaxErrors are NOT runtime errors
+"""
 # try:
 #   x = int(input("What's x? "))
 #   print(f"x is {x}")
