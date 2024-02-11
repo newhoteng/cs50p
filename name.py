@@ -27,9 +27,23 @@ This is buggy bcos program will still proceed to print and raise error when no a
 # print("hello, my name is", sys.argv[1])
 
 """An option to exit program when wrong number of argv is provided"""
+# if len(sys.argv) < 2:
+#   sys.exit("Too few arguments")
+# elif len(sys.argv) > 2:
+#   sys.exit("Too many arguments")
+
+# print("hello, my name is", sys.argv[1])
+
+"""looping through sys.argv, this will print name of file as well"""
+# if len(sys.argv) < 2:
+#   sys.exit("Too few arguments")
+
+# for arg in sys.argv:
+#   print("hello, my name is", arg)
+
+"""omits file name by slicing"""
 if len(sys.argv) < 2:
   sys.exit("Too few arguments")
-elif len(sys.argv) > 2:
-  sys.exit("Too many arguments")
 
-print("hello, my name is", sys.argv[1])
+for arg in sys.argv[1:]:
+  print("hello, my name is", arg)
