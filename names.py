@@ -24,5 +24,5 @@ docs.python.org/3/library/functions.html#open
 name = input("What's your name? ")
 
 file = open("names.txt", "a")
-file.write(name)
+file.write(f"{name}\n")
 file.close()
