@@ -23,6 +23,10 @@ docs.python.org/3/library/functions.html#open
 
 name = input("What's your name? ")
 
-file = open("names.txt", "a")
-file.write(f"{name}\n")
-file.close()
+# file = open("names.txt", "a")
+# file.write(f"{name}\n")
+# file.close()
+
+"""This syntax automatically closes the file"""
+with open("names.txt", "a") as file:
+  file.write(f"{name}\n")
