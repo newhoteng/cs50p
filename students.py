@@ -93,5 +93,11 @@ with open("students.csv", "a") as file:
   writer.writerow({"name": name, "home": home})
 
 
+"""
+PIL
+pillow.readthedocs.io
+"""
+
+
 
     
