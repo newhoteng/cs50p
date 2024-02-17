@@ -32,9 +32,16 @@ re.search(pattern, string, flags=0)
 ?     0 or 1 repetition
 {m}   m repetitions
 {m,n} m-n repetitions
+^     matches the start of the string
+$     matches the end of the string or just before the newline at the end of the string
 """
 
-if re.search(".*@.*", email):
+# if re.search(r".+@.+\.edu", email):
+#   print("Valid")
+# else:
+#   print("Invalid")
+
+if re.search(r"^.+@.+\.edu$", email):
   print("Valid")
 else:
   print("Invalid")
