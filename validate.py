@@ -42,6 +42,15 @@ $     matches the end of the string or just before the newline at the end of the
 \S    not a whitespace character
 \w    word character ... as well as numbers and the underscore
 \W    not a word character
+A|B   either A or B
+(...) a group
+(?:...) non-capturing version
+"""
+
+"""
+re.IGNORECASE
+re.MULTILINE
+re.DOTALL
 """
 
 # if re.search(r".+@.+\.edu", email):
@@ -61,7 +70,7 @@ $     matches the end of the string or just before the newline at the end of the
 #   print("Invalid")
 
 # if re.search(r"^[a-zA-Z0-9_]+@[a-zA-Z0-9_]+\.edu$", email):
-if re.search(r"^\w+@\w+\.edu$", email):
+if re.search(r"^(\w+\.)?\w+@\w+\.edu$", email, re.IGNORECASE):
   print("Valid")
 else:
   print("Invalid")
