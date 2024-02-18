@@ -34,6 +34,14 @@ re.search(pattern, string, flags=0)
 {m,n} m-n repetitions
 ^     matches the start of the string
 $     matches the end of the string or just before the newline at the end of the string
+[]    set of characters
+[^]   complementing the set
+\d    decimal digit
+\D    not a decimal digit
+\s    whitespace characters
+\S    not a whitespace character
+\w    word character ... as well as numbers and the underscore
+\W    not a word character
 """
 
 # if re.search(r".+@.+\.edu", email):
@@ -41,7 +49,19 @@ $     matches the end of the string or just before the newline at the end of the
 # else:
 #   print("Invalid")
 
-if re.search(r"^.+@.+\.edu$", email):
+# if re.search(r"^.+@.+\.edu$", email):
+#   print("Valid")
+# else:
+#   print("Invalid")
+
+
+# if re.search(r"^[^@]+@[^@]+\.edu$", email):
+#   print("Valid")
+# else:
+#   print("Invalid")
+
+# if re.search(r"^[a-zA-Z0-9_]+@[a-zA-Z0-9_]+\.edu$", email):
+if re.search(r"^\w+@\w+\.edu$", email):
   print("Valid")
 else:
   print("Invalid")
