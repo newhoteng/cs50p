@@ -7,4 +7,4 @@ import re
 # print(f"hello, {name}")
 
 name = input("What's your name? ").strip()
-matches = re.search(r"^.+, .+$", name)
+matches = re.search(r"^(.+), (.+)$", name)
