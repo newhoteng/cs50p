@@ -91,6 +91,7 @@
 #   main()
 
 
+# public, protected, or privite
 class Student:
   def __init__(self, name, house):
     self.name = name 
