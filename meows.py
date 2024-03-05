@@ -5,16 +5,29 @@
 # for _ in range(MEOWS):
 #   print("meow")
 
-class Cat:
-  MEOWS = 3
+"""Using class"""
+# class Cat:
+#   MEOWS = 3
 
-  def __init__(self):
-    ...
+#   def __init__(self):
+#     ...
 
-  def meow(self):
-    for _ in range(Cat.MEOWS):
-      print("meow")
+#   def meow(self):
+#     for _ in range(Cat.MEOWS):
+#       print("meow")
 
 
-cat = Cat()
-cat.meow()
+# cat = Cat()
+# cat.meow()
+
+"""docs.python.org/3/library/typing.html"""
+# mypy
+# pip install mypy
+# mypy.readthedocs.io
+
+def meow(n: int):
+  for _ in range(n):
+    print("meow")
+
+number: int = int(input("Number: "))
+meow(number)
