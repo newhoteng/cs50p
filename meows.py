@@ -25,9 +25,18 @@
 # pip install mypy
 # mypy.readthedocs.io
 
-def meow(n: int):
+# def meow(n: int):
+#   for _ in range(n):
+#     print("meow")
+
+# number: int = int(input("Number: "))
+# meow(number)
+
+
+def meow(n: int) -> None:
   for _ in range(n):
     print("meow")
 
 number: int = int(input("Number: "))
-meow(number)
+meows: str = meow(number)
+print(meows)
