@@ -41,7 +41,31 @@
 # meows: str = meow(number)
 # print(meows)
 
+# def meow(n: int) -> str:
+#   return "meow\n" * n
+
+# number: int = int(input("Number: "))
+# meows: str = meow(number)
+# print(meows, end="")
+
+"""docstrings"""
+"""
+peps.python.org/pep-0257/
+standardizes how you should document your code.
+"""
+
 def meow(n: int) -> str:
+  """Meow n times."""
+  
+  """
+  Meow n times.
+
+  :param n: Number of times to meow
+  :type n: int
+  :raise TypeError: If n is not an int
+  :returns: A string of n meows, one per line
+  :rtype: str
+  """
   return "meow\n" * n
 
 number: int = int(input("Number: "))
