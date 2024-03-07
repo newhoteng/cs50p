@@ -1,7 +1,7 @@
 students = [
-  {"name": "Hermione", "house": "Gryfindor"},
-  {"name": "Harry", "house": "Gryfindor"},
-  {"name": "Ron", "house": "Gryfindor"},
+  {"name": "Hermione", "house": "Gryffindor"},
+  {"name": "Harry", "house": "Gryffindor"},
+  {"name": "Ron", "house": "Gryffindor"},
   {"name": "Draco", "house": "Slytherin"},
   {"name": "Padma", "house": "Ravenclaw"},
 ]
