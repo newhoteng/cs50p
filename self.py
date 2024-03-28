@@ -1,3 +1,5 @@
+from functools import reduce
+
 # print(int(7/2))
 # print(int(2/3))
 
@@ -44,13 +46,23 @@
 #             i + 1
 
 # s = "a good   example"
-s = "hello world"
-print(s[::-1])
+# s = "hello world"
+# print(s[:])
 # s = s.split()
 # print(s)
 
 # for word in s:
 #   print(word)
 
-
-
+lst = [1, 2, 3, 1, -1, 1]
+ans = []
+for i in range(len(lst)):
+    hold = lst[i]
+    lst[i] = 1
+    # p = 1
+    # for j in range(len(lst)):
+    #     p = p * lst[j]
+    # ans.append(p)
+    ans.append(reduce(lambda x, y: x * y, lst))
+    lst[i] = hold
+print(ans)
